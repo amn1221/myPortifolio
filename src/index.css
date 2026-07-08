@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default theme: dark, code-editor inspired */
+:root {
+  --paper: #0b1120;
+  --paper-alt: #0f1626;
+  --surface: #141c2e;
+  --ink: #edeff5;
+  --ink-soft: #a6afc4;
+  --ink-faint: #6e7890;
+  --line: #232e45;
+  --line-strong: #33415c;
+  --copper: #7c6ff0;       /* primary accent — indigo/violet */
+  --copper-soft: #322a6b;
+  --teal: #5fd8cb;         /* secondary accent — cyan */
+  --teal-soft: #16332f;
+}
+
+/* Light mode, toggled via .light class on <html> */
+.light {
+  --paper: #f3f1fb;
+  --paper-alt: #ebe7f7;
+  --surface: #ffffff;
+  --ink: #201b3a;
+  --ink-soft: #55507a;
+  --ink-faint: #8c87ac;
+  --line: #ded9f2;
+  --line-strong: #c3bbe6;
+  --copper: #6c5ce7;
+  --copper-soft: #e4dffb;
+  --teal: #1fa79a;
+  --teal-soft: #d7f3ef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+:focus-visible {
+  outline: 2px solid var(--copper);
+  outline-offset: 3px;
+}
+
+/* window-chrome — mac-style traffic-light dots for the code-editor motif */
+.window-dots span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 9999px;
+}
+.window-dots span:nth-child(1) { background: #ef5350; }
+.window-dots span:nth-child(2) { background: #f4b942; }
+.window-dots span:nth-child(3) { background: #3fc768; }
+
+/* soft corner-bracket accent, used sparingly for a technical touch */
+.bracketed { position: relative; }
+.bracketed::before, .bracketed::after, .bracketed .bl, .bracketed .br {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-color: var(--copper);
+  border-style: solid;
+  opacity: 0.6;
+  pointer-events: none;
+}
+.bracketed::before { top: -1px; left: -1px; border-width: 2px 0 0 2px; }
+.bracketed::after { top: -1px; right: -1px; border-width: 2px 2px 0 0; }
+.bracketed .bl { bottom: -1px; left: -1px; border-width: 0 0 2px 2px; }
+.bracketed .br { bottom: -1px; right: -1px; border-width: 0 2px 2px 0; }
