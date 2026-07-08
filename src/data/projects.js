@@ -25,14 +25,14 @@ export const projects = [
     year: '2025',
     description:
       'An interactive community workspace enabling structured tech discussion, user posting timelines, and feedback threads.',
-    tags: ['React', 'Node.js', 'MySQL'],
+    tags: ['React', 'Node.js', 'Express', 'MySQL'],
     live: '#',
     source: '#',
   },
   {
     title: 'ChatGPT Web Clone',
     icon: 'Bot',
-    year: '2025',
+    year: '2026',
     description:
       'Custom application interface interacting with large language APIs, state handling pipelines, and continuous messaging views.',
     tags: ['React', 'REST API'],
@@ -52,10 +52,10 @@ export const projects = [
   {
     title: 'Netflix Streaming UI Clone',
     icon: 'Clapperboard',
-    year: '2025',
+    year: '2026',
     description:
       'Front-end design rendering structured grids that dynamically consume content arrays and state selections.',
-    tags: ['React', 'Firebase'],
+    tags: ['React', 'CSS'],
     live: 'https://moviedbp.netlify.app/',
     source: 'https://github.com/amn1221/MovieDB',
   },
