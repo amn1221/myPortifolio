@@ -7,7 +7,7 @@ export const projects = [
       'Full stack platform engineered to optimize infrastructure operations, track incident lifecycles, and isolate downtime spikes.',
     tags: ['React', 'Node.js', 'MySQL'],
     live: '#',
-    source: '#',
+    source: 'https://github.com/amn1221/Ticketing_system',
   },
   {
     title: 'Asset Registration & Management',
@@ -17,7 +17,7 @@ export const projects = [
       'Relational architecture focused on cataloging enterprise infrastructure, inventory control, and deployment distributions.',
     tags: ['Node.js', 'Express', 'MySQL'],
     live: '#',
-    source: 'https://github.com/amn1221/Ticketing_system',
+    source: '#',
   },
   {
     title: 'Evangadi Forum Project',
@@ -40,14 +40,14 @@ export const projects = [
     source: 'https://github.com/amn1221/chatcpt_clone',
   },
   {
-    title: 'Apple Site Mock Architecture',
+    title: 'Apple Clone',
     icon: 'LayoutGrid',
     year: '2025',
     description:
       'UI-focused build rendering highly interactive responsive layouts, element transitions, and high-fidelity front-end design.',
-    tags: ['React', 'CSS Grid'],
+    tags: ['React', 'CSS '],
     live: '#',
-    source: '#',
+    source: 'https://github.com/amn1221/AppleClone',
   },
   {
     title: 'Netflix Streaming UI Clone',
