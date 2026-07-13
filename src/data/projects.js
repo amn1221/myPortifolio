@@ -17,7 +17,7 @@ export const projects = [
       'Relational architecture focused on cataloging enterprise infrastructure, inventory control, and deployment distributions.',
     tags: ['Node.js', 'Express', 'MySQL'],
     live: '#',
-    source: '#',
+    source: 'https://github.com/amn1221/Ticketing_system',
   },
   {
     title: 'Evangadi Forum Project',
@@ -26,8 +26,8 @@ export const projects = [
     description:
       'An interactive community workspace enabling structured tech discussion, user posting timelines, and feedback threads.',
     tags: ['React', 'Node.js', 'Express', 'MySQL'],
-    live: '#',
-    source: '#',
+    live: 'https://ai-powered-evangadi-forum-teal.vercel.app/',
+    source: 'https://github.com/amn1221/Ai-powered-Evangadi-Forum',
   },
   {
     title: 'ChatGPT Web Clone',
@@ -36,8 +36,8 @@ export const projects = [
     description:
       'Custom application interface interacting with large language APIs, state handling pipelines, and continuous messaging views.',
     tags: ['React', 'REST API'],
-    live: '#',
-    source: '#',
+    live: 'https://chatcpt-clone.vercel.app/',
+    source: 'https://github.com/amn1221/chatcpt_clone',
   },
   {
     title: 'Apple Site Mock Architecture',
